@@ -1,0 +1,20 @@
+{
+  "step": 1,
+  "network": "baseMainnet",
+  "chainId": 8453,
+  "deployer": "0xE43799a5fA454a30141690a9036D6CABfF48b1F7",
+  "timestamp": "2025-07-07T05:27:14.162Z",
+  "contracts": {
+    "WETH": "0x20402C9037F767fF7F8Bf510f299cE2c0532a1Ef",
+    "Factory": "0x929989Eaa3fc8FafF7de6309281365FE0d06a8b7"
+  },
+  "gasUsed": {
+    "WETH": "527121",
+    "Factory": "3047086"
+  },
+  "totalGasUsed": {
+    "type": "BigNumber",
+    "hex": "0x3689bf"
+  },
+  "initCodeHash": "0x0d7309a0239a704996a1d133c39d8c3d6bc8c10b4beb14a648c41fe7d3a7314e"
+}
