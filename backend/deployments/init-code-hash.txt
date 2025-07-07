@@ -1,0 +1,10 @@
+INIT CODE HASH: 0x0d7309a0239a704996a1d133c39d8c3d6bc8c10b4beb14a648c41fe7d3a7314e
+
+IMPORTANT: Update this in DealixLibrary.sol before running step 2!
+
+Replace the hex value in the pairFor function with: 0d7309a0239a704996a1d133c39d8c3d6bc8c10b4beb14a648c41fe7d3a7314e
+
+Current deployment addresses:
+- WETH: 0x4200000000000000000000000000000000000006
+- Factory: 0x8E9f8751f1419b7D04DF68065bb8C5f0d870475E
+- Router: 0x836cfa3347C78Ff4E96044AbFa2AD2ca0BA29d65

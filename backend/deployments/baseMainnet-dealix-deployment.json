@@ -1,0 +1,21 @@
+{
+  "network": "baseMainnet",
+  "chainId": 8453,
+  "timestamp": "2025-07-07T05:41:55.096Z",
+  "contracts": {
+    "WETH": "0x4200000000000000000000000000000000000006",
+    "Factory": "0x8E9f8751f1419b7D04DF68065bb8C5f0d870475E",
+    "Router": "0x836cfa3347C78Ff4E96044AbFa2AD2ca0BA29d65",
+    "DealixLibrary": "0xa4dE8f0c005F1c629B02D7AC833d232D5F25BB83",
+    "DealixDEX": "0x47d1BF702763813D2087CB5292045d65d907c803"
+  },
+  "dealixConfig": {
+    "mintingFee": "0.0005 ETH",
+    "platformFee": "0.25%",
+    "maxDiscountPercentage": "50%",
+    "affiliatePlatformCut": "10%",
+    "streakBonusPerDay": "0.05%"
+  },
+  "deployer": "0x23ECD1430E4Cb114fF6e002958742a2BAfE3252b",
+  "blockNumber": 32538782
+}
