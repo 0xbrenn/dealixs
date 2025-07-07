@@ -1,0 +1,78 @@
+# 🚀 IOPN DEX - Simple Deployment Guide
+
+Deploy your DEX in 10 minutes with 2 simple scripts.
+
+## Setup (One Time)
+
+1. Create config file:
+```bash
+# Create deployment.config.js in your backend folder
+```
+
+2. Create environment file:
+```bash
+# Create .env.deployment
+# Add existing contract addresses if you have them
+```
+
+## 🎯 Deployment Process
+
+### Step 1: Deploy DEX Contracts
+```bash
+npx hardhat run scripts/1-deploy.js --network iopnTestnet
+```
+
+This will:
+- Deploy WETH (or use existing)
+- Deploy Factory
+- Deploy Router
+- **Return the init code hash**
+
+### Step 2: Update Library
+When you see:
+```
+🔑 INIT CODE HASH: 0x39d28fea0815dad38a3f94e283dc35bfd7319f91d66ca84150b20c149f9bc55b
+```
+
+1. Open `contracts/libraries/IOPNLibrary.sol`
+2. Find the `pairFor` function
+3. Replace `hex'...'` with your hash (remove 0x prefix)
+4. Save the file
+
+### Step 3: Deploy Library
+```bash
+npx hardhat run scripts/2-deploy.js --network iopnTestnet
+```
+
+This will:
+- Verify the init hash is correct
+- Deploy the library
+- Show all contract addresses
+
+## ✅ Complete!
+
+Your DEX is deployed! All addresses will be shown in the terminal:
+```
+All Contracts:
+  WETH: 0x...
+  Factory: 0x...
+  Router: 0x...
+  IOPNLibrary: 0x...
+```
+
+## 🔧 Using Existing WETH
+
+Edit `.env.deployment`:
+```env
+EXISTING_WETH_ADDRESS=0x... # Your existing WETH
+SKIP_EXISTING_CONTRACTS=true
+```
+
+## 📁 Output Files
+
+- `deployments/{network}-contracts-deployment.json` - Step 1 results
+- `deployments/{network}-complete-deployment.json` - All addresses
+- `deployments/.env.{network}` - Frontend configuration
+- `deployments/init-code-hash.txt` - Quick reference
+
+That's it! Simple and straightforward.

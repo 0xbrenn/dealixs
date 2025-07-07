@@ -1,0 +1,11 @@
+delete artifact file
+
+Rename WETH Contract If Fresh Deployment
+
+npx hardhat run scripts/1-deploy.js --network DealixTestnet
+
+Get init hash from terminal and change it in DealixLibrary .sol
+
+save then call
+
+npx hardhat run scripts/2-deploy.js --network DealixTestnet
