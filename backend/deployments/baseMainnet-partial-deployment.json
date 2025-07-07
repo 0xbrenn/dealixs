@@ -1,0 +1,18 @@
+{
+  "step": 1,
+  "network": "baseMainnet",
+  "chainId": 8453,
+  "deployer": "0x23ECD1430E4Cb114fF6e002958742a2BAfE3252b",
+  "timestamp": "2025-07-07T18:26:00.211Z",
+  "contracts": {
+    "WETH": "0x4200000000000000000000000000000000000006"
+  },
+  "gasUsed": {},
+  "totalGasUsed": {
+    "type": "BigNumber",
+    "hex": "0x00"
+  },
+  "skipped": [
+    "WETH"
+  ]
+}
