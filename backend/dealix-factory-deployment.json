@@ -1,8 +1,0 @@
-{
-  "factory": "0x9134C411b4E231Ee93410a091B71aBf4cdcA2694",
-  "initCodeHash": "0x44fb3e6ccf265b986e323b0ea4db769c3b03b88a647358a71e4075bcab4d1999",
-  "deployer": "0x07B39CDD46bf708dCe7666eA2a92b26EEeb02306",
-  "network": "base",
-  "contractName": "DealixV2Factory",
-  "timestamp": "2025-07-07T23:10:58.665Z"
-}
